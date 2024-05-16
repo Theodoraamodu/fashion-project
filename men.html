@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious Clothing</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="pics/company.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Project Design.html">Home</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="female.html">Women</a></li>
+        <li><a href="sports.html">Sports</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="Mens">
+    <div class="Men-Grandeur">
+      <h1>Men's Wear</h1>
+      <br>
+      <p>Our new collection showcases a harmonious blend of trendsetting designs,
+         luxurious fabrics, and impeccable craftsmanship,<p></p> all aimed at providing you with an unforgettable fashion experience.</p>
+    </div>
+  </section>
+
+  <section class="Clothing-slides">
+   
+    <h1>Where Luxury Meets Simplicity</h1>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="pics/Groupmen1.JPG" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="pics/Groupmen2.JPG" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="pics/Groupmen3.JPG" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span id="1" class="dot" onclick="changeImage(this.id)"></span>
+      <span id="2" class="dot" onclick="changeImage(this.id)"></span>
+      <span id="3" class="dot" onclick="changeImage(this.id)"></span>
+    </div>
+  </section>
+
+  
+ 
+
+  <section class="Price">
+    <div class="Price-content">
+      <h2>Men's Prices</h2>
+      <p>Shop our latest cool collection!.</p>
+    </div>
+    
+    <div class="MenPrice">
+      <div>
+        <img src="pics/MenPrice1 (1).JPG" alt="clothing1" onclick="openPopup(this)">
+        <p>White Top - $200</p>
+      </div>
+      <div>
+        <img src="pics/MenPrice1.5 (2).JPG" alt="clothing2" onclick="openPopup(this)">
+        <p>Cream Top - $150</p>
+      </div>
+      <div>
+        <img src="pics/MenPrice1 (3).JPG" alt="clothing3" onclick="openPopup(this)">
+        <p>Brown Pant - $200</p>
+      </div>
+      <div>
+        <img src="pics/MenPrice1 (4).JPG" alt="clothing4" onclick="openPopup(this)">
+        <p>Grey set - $450</p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="popup" onclick="closePopup()">
+    <div class="popup-content">
+      <span class="popup-close">&times;</span>
+      <img id="popupImage" src="" alt="popup-image">
+      <p id="popupDescription"></p>
+      <p id="popupText"></p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="social-media">
+          <li><a href="http://facebook.com"><img src="pics/Facebook.jpg" alt="Facebook"></a></li>
+          <li><a href="http://twitter.com"><img src="pics/twitter.png" alt="Twitter"></a></li>
+          <li><a href="http://instagram.com"><img src="pics/instragram.jpg" alt="Instagram"></a></li>
+          <li><a href="mailto:username@student.douglascollege.ca"><img src="pics/email.png.jpg" alt="Email"></a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h3>Subscribe</h3>
+        <p>Subscribe to our newsletter for the latest updates and promotions:</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2023 Luxurious Clothing. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </footer>
+  
+

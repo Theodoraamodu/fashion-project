@@ -1,0 +1,349 @@
+ /* Reset CSS */
+
+
+* {/* the whole document*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Garamond, serif;
+  font-size: 20px;
+}
+
+.logo img { /* the company logo*/
+  width: 100px;
+  height: 100px;
+}
+
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond, serif;
+  font-size: 40px;
+}
+
+nav ul { /* for women home and men*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {  /* for women home and men*/
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a { /* for women home and men*/
+  text-decoration: none;
+  color: #0f0e0e;
+  padding: 5px;
+}
+
+  /* Header */
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+  /* About Our collection */
+.about {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+  color: beige;
+  
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+.social-media li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.footer-section img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+
+ /* for clothing image in about us*/
+ .introduction {
+  background-color: beige;
+  padding: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+ 
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.clothing {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 50px 0;
+}
+
+.clothing img {
+  width: 300px;
+  height: auto;
+  margin-right: 50px;
+  scroll-snap-align: start;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.introduction-content {
+  margin-bottom: 20px;
+}
+
+.introduction-content h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.introduction-content p {
+  font-size: 20px;
+  line-height: 1.5;
+ 
+}
+
+
+/*portfolio*/
+.portfolio img {
+  width: 50px;
+  height: auto;
+}
+
+.portfolio p {
+  font-size: 13px;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  width: 45%;
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-item {
+  width: calc(30% - 30px);
+  margin-bottom: 10px;
+  background-color: rgb(244, 244, 231);
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.portfolio-item a:visited
+{
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+.portfolio-item img {
+  width: 50%;
+  height: auto;
+}
+
+.portfolio-item p {
+  font-family: Garamond, serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+   /*  the responsive search bar */
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-bar input[type="text"],
+.search-bar button[type="submit"] {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/*media response*/
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+  }
+  
+  .clothing {
+    padding: 50px 20px;
+  }
+  
+  .clothing img {
+    margin-right: 20px;
+  }
+
+  .introduction-content h2 {
+    font-size: 20px;
+  }
+
+  .introduction-content p {
+    font-size: 14px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+  }
+
+  .portfolio-item p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .about p {
+    font-size: 18px;
+  }
+  
+  .clothing img {
+    width: 200px;
+  }
+  
+  .introduction-content h2 {
+    font-size: 20px;
+  }
+  
+  .introduction-content p {
+    font-size: 14px;
+  }
+  
+  .portfolio img {
+    width: 200px;
+  }
+  
+  .portfolio p {
+    font-size: 12px;
+  }
+  
+  .social-media li {
+    margin-right: 30px;
+  }
+  
+  .footer-content {
+    max-width: 600px;
+  }
+  
+  .footer-section {
+    margin-bottom: 10px;
+  }
+}
+
+  
+
+ 
