@@ -1,5 +1,4 @@
-
-/*for the moving pics*/
+/*for the moving img*/
 let slideIndex = 0;
 
 showSlides();
@@ -9,48 +8,43 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
-function changeImage(texto)
-{
-  slideIndex=texto-1;
+function changeImage(texto) {
+  slideIndex = texto - 1;
   showSlides();
-clearInterval(tempo);
-
+  clearInterval(tempo);
 }
 
+const popup = document.querySelector(".popup");
+const popupImage = document.getElementById("popupImage");
+const popupDescription = document.getElementById("popupDescription");
+const popupClose = document.querySelector(".popup-close");
 
+function openPopup(element) {
+  const src = element.src;
+  const alt = element.alt;
+  const description = element.dataset.description;
 
-const popup = document.querySelector('.popup');
-  const popupImage = document.getElementById('popupImage');
-  const popupDescription = document.getElementById('popupDescription');
-  const popupClose = document.querySelector('.popup-close');
+  popupImage.src = src;
+  popupImage.alt = alt;
+  popupDescription.textContent = description;
 
-  function openPopup(element) {
-    const src = element.src;
-    const alt = element.alt;
-    const description = element.dataset.description;
+  popup.classList.add("active");
+}
 
-    popupImage.src = src;
-    popupImage.alt = alt;
-    popupDescription.textContent = description;
+function closePopup() {
+  popup.classList.remove("active");
+}
 
-    popup.classList.add('active');
-  }
-
-  function closePopup() {
-    popup.classList.remove('active');
-  }
-
-  popupClose.addEventListener('click', closePopup);
-
-  
+popupClose.addEventListener("click", closePopup);
